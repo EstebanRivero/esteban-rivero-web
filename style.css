@@ -75,6 +75,7 @@ section {
 
 #conocimientos {
   text-align: center;
+  
 }
 
 section, form, footer {
@@ -91,6 +92,10 @@ section, form, footer {
 
 #lista-conocimientos:hover {
   color: #ff0000
+}
+
+#lista-conocimientos{
+  list-style-type: none;
 }
 
 /* Estilos para formularios */
