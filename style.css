@@ -175,10 +175,18 @@ header:hover {
 
 /* Agregar una sombra suave al formulario */
 form {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-  border-radius: 8px; /* Bordes redondeados */
+  width: 100%;
+  max-width: 500px; /* Para no hacerlo tan ancho en pantallas grandes */
+  margin: 0 auto;
   padding: 20px;
 }
+
+/* También ajustamos los inputs y botones para que se adapten a pantallas pequeñas */
+form input, form textarea, form button {
+  width: 100%;
+}
+
+
 
 button {
   background-color: #3498db; /* Azul brillante */
@@ -241,6 +249,29 @@ a {
 
   section {
     padding: 20px 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin-right: 0;
+  }
+
+  .contenido-sobre-mi {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contenido-sobre-mi img {
+    width: 80%;
+    margin-bottom: 20px;
   }
 }
 
